@@ -8,7 +8,7 @@ app.get('/', (req, res, next) =>{
     res.send('Escuchando con Railway...')
 })
 app.get('/env', (req, res, next) => {
-    res.send(`Solicitando el entorno: ${process.env.VICIOUSCOFFEE}`)
+    res.send(`Solicitando el entorno: ${process.env.VICIOUS_COFFEE}`)
 })
 
 // LISTEN
