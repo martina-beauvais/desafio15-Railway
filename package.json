@@ -2,9 +2,11 @@
   "name": "desafio15",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./src/config.js",
   "type":"module",
   "scripts": {
+    "start": "node src/config.js",
+    "dev": "nodemon src/config.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
