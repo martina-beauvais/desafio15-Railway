@@ -14,14 +14,5 @@ app.get('/get-out', (req, res, next) => {
     res.send('Dejando de escuchar con Railway...')
 })
 
-app.get('/user',(req,res)=>{
-    if(process.env.ENVIRONMENT === "PRODUCTION"){
-        res.send(`OBTENIENDO USUARIOS DE LA BASE DE DATOS PROOOODUCTIVAA`)
-    }
-    else{
-        res.send(`OBTENIENDO USUARIOS DE LA BASE DE DATOS DE PRUEBA: ${process.env.TESTDB}`)
-    }
-})
-
 // LISTEN
 app.listen(PORT, () => console.log(`http://localhost:${PORT}`));
